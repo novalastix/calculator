@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@100..900&display=swap');
+
+body
+{
+  background-color: #E5E5E5;
+  margin: 0;
+}
+
+main
+{
+  max-width: 8.5in;
+  max-height: 11in;
+  margin: auto;
+  padding: 0 16px;
+  display: flex;
+  flex-direction: column; 
+  height: calc(100vh - 64px);
+
+  font-family: "Noto Sans Mono", monospace;
+  font: 16px;
+  color: #1A1A1A;
+}
+
+header
+{
+  font-size: 18px;
+  line-height: 2em;
+  margin: 0.25em 0;
+  padding: 0;
+}
+
+#screen
+{
+  box-sizing: border-box;
+  height: 100%;
+  width: 100%;
+  padding: 0.5em;
+  background-color: #F2F2F2;
+  
+  border-color: #1A1A1A;
+  margin: 0;
+  resize: none;
+  text-align: right;
+}
+
+input
+{
+  margin: 1em 0;
+
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+}
+
+input:focus
+{
+  outline: none;
+}
+
+a
+{
+  text-decoration: none;
+}
+
+a:hover
+{
+  stroke: #1A1A1A;
+  stroke-width: 1em;
+}
+
+a svg, a img
+{
+  vertical-align: middle;
+}
+
+
+@media print{
+  body{
+    visibility: hidden
+  }
+  #screen{
+    overflow: visible;
+    visibility: visible;
+    border: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    background-color: white;
+    color: black;
+  }
+}
