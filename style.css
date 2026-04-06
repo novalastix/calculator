@@ -40,7 +40,21 @@ header
   border-color: #1A1A1A;
   margin: 0;
   resize: none;
+
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+#screen .line
+{
   text-align: right;
+  color: #1A1A1A50;
+}
+#screen .line:first-of-type
+{
+  font-size: 18px;
+  font-weight: bolder;
+  color: unset;
 }
 
 input
@@ -50,6 +64,8 @@ input
   font-family: inherit;
   font-size: inherit;
   color: inherit;
+
+  text-align: right;
 }
 
 input:focus
