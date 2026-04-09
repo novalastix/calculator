@@ -50,6 +50,8 @@ input
   font-family: inherit;
   font-size: inherit;
   color: inherit;
+
+  text-align: right;
 }
 
 input:focus
@@ -60,6 +62,18 @@ input:focus
 a
 {
   text-decoration: none;
+}
+#buttons
+{
+  display: flex;
+  flex-wrap: wrap;
+  background-color: red;
+}
+button
+{
+  font: inherit;
+  font-size: 24px;
+  padding: 0.25em;
 }
 
 a:hover
