@@ -42,7 +42,8 @@ header
   resize: none;
 
   display: flex;
-  flex-direction: column-reverse;
+  flex-direction: column;
+  justify-content: end;
 }
 
 #screen .line
@@ -50,7 +51,7 @@ header
   text-align: right;
   color: #1A1A1A50;
 }
-#screen .line:first-of-type
+#screen .line:last-of-type
 {
   font-size: 18px;
   font-weight: bolder;
